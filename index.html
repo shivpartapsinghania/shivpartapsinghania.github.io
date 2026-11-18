@@ -1,65 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Vision | Student Developer</title>
-<meta name="description" content="A student learning, building, and working toward a vision of creating technology that matters.">
-<style>
-:root{--bg:#080b12;--panel:#101723;--line:#243247;--blue:#62a8ff;--muted:#a5b2c4;--white:#f4f7fb}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 10%,#13243a 0,transparent 38%),var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
-main{width:min(1080px,92%);margin:auto;padding:72px 0 45px}.top{display:flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;letter-spacing:3px;text-transform:uppercase}.top:before{content:"";width:26px;height:1px;background:var(--blue)}
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;margin-top:50px}.eyebrow{color:var(--blue);font-size:13px;letter-spacing:2px;text-transform:uppercase}.title{font-size:clamp(42px,7vw,76px);line-height:1.03;letter-spacing:-3px;margin:15px 0}.title span{color:var(--blue)}.intro{font-size:18px;color:var(--muted);line-height:1.75;max-width:560px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.button{padding:12px 17px;border-radius:10px;border:1px solid var(--line);text-decoration:none;color:var(--white);font-weight:600}.button.primary{background:var(--blue);color:#06101c;border-color:var(--blue)}.portrait{border:1px solid var(--line);padding:10px;border-radius:22px;background:linear-gradient(135deg,#142238,#0c111b);box-shadow:0 24px 80px #0007}.portrait img{width:100%;display:block;border-radius:14px;object-fit:cover;max-height:570px}.caption{padding:13px 5px 3px;color:var(--muted);font-size:13px}.section{margin-top:70px}.section h2{font-size:28px;margin-bottom:12px}.section p{color:var(--muted);line-height:1.8;font-size:16px}.video{border:1px solid var(--line);background:var(--panel);padding:18px;border-radius:18px;margin-top:25px}.video video{width:100%;border-radius:12px;display:block;background:#070a10;min-height:180px}.video-note{font-size:13px;color:var(--muted);margin:12px 2px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.card{border:1px solid var(--line);background:var(--panel);border-radius:15px;padding:20px}.card h3{margin:0 0 10px;font-size:16px}.card p{margin:0;font-size:14px}.taglist{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.tag{border:1px solid var(--line);background:#0e1622;padding:9px 12px;border-radius:999px;color:#d8e4f4;font-size:13px}footer{margin-top:70px;border-top:1px solid var(--line);padding-top:20px;color:#77869a;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:760px){main{padding-top:42px}.hero{grid-template-columns:1fr;gap:28px;margin-top:32px}.portrait{max-width:470px}.title{letter-spacing:-1.5px}.cards{grid-template-columns:1fr}.section{margin-top:50px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Shivam Kumar Gupta — student, curious technologist and aspiring software developer.">
+
+    <title>Shivam Kumar Gupta | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-<main>
-  <div class="top">My journey · 2026</div>
-  <section class="hero">
-    <div>
-      <div class="eyebrow">Student · Aspiring Software Developer</div>
-      <h1 class="title">Hello, I'm<br><span>Shivam Kumar Gupta.</span></h1>
-      <p class="intro">I'm learning to turn curiosity into code. Right now, I'm building my foundations in Java, problem-solving, and Data Structures & Algorithms—one consistent step at a time.</p>
-      <div class="buttons">
-        <a class="button primary" href="#intro">▶ Meet me</a>
-        <a class="button" href="#vision">My vision ↓</a>
-      </div>
-    </div>
-    <div class="portrait">
-      <img src="profile.jpg" alt="My profile photo">
-      <div class="caption">A student today. A builder in progress.</div>
-    </div>
-  </section>
 
-  <section class="section" id="intro">
-    <h2>A little introduction</h2>
-    <p>This is where my short introduction video—with my own voice—will live.</p>
-    <div class="video">
-      <video controls playsinline poster="profile.jpg">
-        <source src="intro.mp4" type="video/mp4">
-        Your browser doesn't support this video.
-      </video>
-      <div class="video-note">Add your finished voice intro as <strong>intro.mp4</strong> in this repository. Visitors can press play to hear and watch it.</div>
-    </div>
-  </section>
+    <!-- Background -->
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
 
-  <section class="section" id="vision">
-    <h2>My vision</h2>
-    <p>To become a thoughtful software developer who creates useful technology, solves meaningful problems, and keeps learning throughout the journey. I believe progress comes from consistency, curiosity, and building things—not just talking about them.</p>
-  </section>
+    <!-- Navigation -->
+    <header class="navbar">
 
-  <section class="section">
-    <h2>Currently building my foundations</h2>
-    <div class="cards">
-      <div class="card"><h3>☕ Java</h3><p>Learning programming fundamentals and writing clean, understandable code.</p></div>
-      <div class="card"><h3>🧩 Problem Solving</h3><p>Practicing logic, breaking problems down, and improving step by step.</p></div>
-      <div class="card"><h3>📚 DSA</h3><p>Working toward stronger foundations in data structures and algorithms.</p></div>
-    </div>
-    <div class="taglist"><span class="tag">Java</span><span class="tag">Learning DSA</span><span class="tag">Student</span><span class="tag">Consistency</span><span class="tag">Growth mindset</span></div>
-  </section>
+        <a href="#home" class="logo">SKG<span>.</span></a>
 
-  <footer><span>Made with intention, one step at a time.</span><span>Replace “Shivam Kumar Gupta” and add your video when ready.</span></footer>
-</main>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-cta">
+            Let's Connect ↗
+        </a>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero container" id="home">
+
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">
+                    <span class="pulse"></span>
+                    CURIOUS BY NATURE · BUILDING BY PRACTICE
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span class="gradient-text">
+                        Shivam<br>Kumar Gupta.
+                    </span>
+                </h1>
+
+                <h2 class="hero-role">
+                    CSE (AI & ML) Student
+                    <span>·</span>
+                    Aspiring Software Developer
+                </h2>
+
+                <p class="hero-description">
+                    I'm curious about how technology works, why it matters,
+                    and how I can use it to build meaningful solutions.
+
+                    I believe in learning by building, experimenting,
+                    and continuously improving.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↘
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/shivpartapsinghania"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shivam-kumar-gupta-02b748434/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Original Photo -->
+            <div class="hero-visual reveal">
+
+                <div class="portrait-frame">
+
+                    <div class="photo-label">
+                        THE JOURNEY · 001
+                    </div>
+
+                    <img
+                        src="profile.jpg"
+                        alt="Shivam Kumar Gupta"
+                    >
+
+                    <div class="photo-footer">
+                        <span>STUDENT · CREATOR</span>
+                        <span>INDIA</span>
+                    </div>
+
+                </div>
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="floating-card">
+                    <span class="status-dot"></span>
+                    Always learning
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="section container" id="about">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    GET TO KNOW ME
+                </p>
+
+                <h2>
+                    Learning today.<br>
+                    <span class="gradient-text">
+                        Building for tomorrow.
+                    </span>
+                </h2>
+
+            </div>
+
+            <div class="about-grid reveal">
+
+                <div class="about-card">
+
+                    <p>
+                        I'm Shivam Kumar Gupta, a B.Tech student pursuing
+                        Computer Science and Engineering with a specialization
+                        in Artificial Intelligence and Machine Learning.
+                    </p>
+
+                    <p>
+                        I'm currently strengthening my programming and
+                        development fundamentals, exploring ideas, and
+                        learning through practical projects.
+                    </p>
+
+                    <p>
+                        My long-term goal is to become a strong software
+                        engineer and build meaningful technology products
+                        that solve real-world problems.
+                    </p>
+
+                </div>
+
+                <div class="education-card">
+
+                    <p class="small-label">EDUCATION</p>
+
+                    <h3>B.Tech — CSE (AI & ML)</h3>
+
+                    <p>
+                        Bosscoder School of Technology
+                    </p>
+
+                    <p>
+                        S-VYASA Deemed to be University
+                    </p>
+
+                    <span class="education-status">
+                        First Year Student
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section class="section container" id="skills">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    WHAT I'M LEARNING
+                </p>
+
+                <h2>
+                    My <span class="gradient-text">Toolkit.</span>
+                </h2>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">01</span>
+                    <h3>Java</h3>
+                    <p>Programming fundamentals & problem solving</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">02</span>
+                    <h3>Python</h3>
+                    <p>Programming & AI exploration</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">03</span>
+                    <h3>HTML & CSS</h3>
+                    <p>Web structure, styling & responsive design</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">04</span>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control & project sharing</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">05</span>
+                    <h3>AI Tools</h3>
+                    <p>Exploring AI-assisted workflows</p>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-number">06</span>
+                    <h3>Problem Solving</h3>
+                    <p>Learning through practice & iteration</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Interests -->
+        <section class="section container" id="interests">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    WHAT EXCITES ME
+                </p>
+
+                <h2>
+                    Areas of <span class="gradient-text">Interest.</span>
+                </h2>
+
+            </div>
+
+            <div class="interests reveal">
+
+                <span>Artificial Intelligence & ML</span>
+                <span>Software Engineering</span>
+                <span>Web Development</span>
+                <span>Hardware & Embedded Systems</span>
+                <span>Robotics</span>
+                <span>AR / VR / XR</span>
+                <span>System Design</span>
+                <span>Cybersecurity</span>
+                <span>Entrepreneurship</span>
+                <span>Startups</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    IDEAS IN PROGRESS
+                </p>
+
+                <h2>
+                    Featured <span class="gradient-text">Projects.</span>
+                </h2>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span>PROJECT 01</span>
+                        <span class="project-status">
+                            IN DEVELOPMENT
+                        </span>
+                    </div>
+
+                    <h3>TraceMind</h3>
+
+                    <p>
+                        An AI-powered developer tool designed to analyze
+                        errors and stack traces, use persistent memory
+                        to understand previous incidents, and help
+                        developers generate structured post-mortems.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>AI</span>
+                        <span>Developer Tools</span>
+                        <span>Next.js</span>
+                        <span>Persistent Memory</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+                        <span>PROJECT 02</span>
+                        <span class="project-status">
+                            IN DEVELOPMENT
+                        </span>
+                    </div>
+
+                    <h3>Log-Lenx</h3>
+
+                    <p>
+                        A project currently under development.
+                        More details and technical information
+                        will be shared as the project progresses.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Work in Progress</span>
+                        <span>Coming Soon</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Introduction Video -->
+        <section class="section container" id="intro">
+
+            <div class="section-heading reveal">
+
+                <p class="section-label">
+                    A PERSONAL INTRODUCTION
+                </p>
+
+                <h2>
+                    My story, in <span class="gradient-text">Motion.</span>
+                </h2>
+
+                <p class="section-description">
+                    Get to know me beyond the code.
+                </p>
+
+            </div>
+
+            <div class="video-container reveal">
+
+                <video controls poster="profile.jpg">
+
+                    <source src="intro.mp4" type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+                <p class="video-caption">
+                    INTRODUCTION · MY JOURNEY
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section container contact-section" id="contact">
+
+            <p class="section-label reveal">
+                LET'S CONNECT
+            </p>
+
+            <h2 class="reveal">
+                Let's build something<br>
+                <span class="gradient-text">meaningful.</span>
+            </h2>
+
+            <p class="section-description reveal">
+                Have an interesting idea, a collaboration opportunity,
+                or simply want to connect? I'd be happy to hear from you.
+            </p>
+
+            <a
+                href="mailto:shivamkumargupta2048@gmail.com"
+                class="btn btn-primary reveal"
+            >
+                Send Me an Email ↗
+            </a>
+
+            <div class="contact-links reveal">
+
+                <a href="mailto:shivamkumargupta2048@gmail.com">
+                    Email
+                </a>
+
+                <a href="https://github.com/shivpartapsinghania"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/shivam-kumar-gupta-02b748434/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Shivam Kumar Gupta</p>
+
+        <p>Built with curiosity, creativity & code.</p>
+
+        <a href="#home">Back to top ↑</a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
