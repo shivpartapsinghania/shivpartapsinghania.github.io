@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Vision | Student Developer</title>
+<meta name="description" content="A student learning, building, and working toward a vision of creating technology that matters.">
+<style>
+:root{--bg:#080b12;--panel:#101723;--line:#243247;--blue:#62a8ff;--muted:#a5b2c4;--white:#f4f7fb}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 10%,#13243a 0,transparent 38%),var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+main{width:min(1080px,92%);margin:auto;padding:72px 0 45px}.top{display:flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;letter-spacing:3px;text-transform:uppercase}.top:before{content:"";width:26px;height:1px;background:var(--blue)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;margin-top:50px}.eyebrow{color:var(--blue);font-size:13px;letter-spacing:2px;text-transform:uppercase}.title{font-size:clamp(42px,7vw,76px);line-height:1.03;letter-spacing:-3px;margin:15px 0}.title span{color:var(--blue)}.intro{font-size:18px;color:var(--muted);line-height:1.75;max-width:560px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.button{padding:12px 17px;border-radius:10px;border:1px solid var(--line);text-decoration:none;color:var(--white);font-weight:600}.button.primary{background:var(--blue);color:#06101c;border-color:var(--blue)}.portrait{border:1px solid var(--line);padding:10px;border-radius:22px;background:linear-gradient(135deg,#142238,#0c111b);box-shadow:0 24px 80px #0007}.portrait img{width:100%;display:block;border-radius:14px;object-fit:cover;max-height:570px}.caption{padding:13px 5px 3px;color:var(--muted);font-size:13px}.section{margin-top:70px}.section h2{font-size:28px;margin-bottom:12px}.section p{color:var(--muted);line-height:1.8;font-size:16px}.video{border:1px solid var(--line);background:var(--panel);padding:18px;border-radius:18px;margin-top:25px}.video video{width:100%;border-radius:12px;display:block;background:#070a10;min-height:180px}.video-note{font-size:13px;color:var(--muted);margin:12px 2px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.card{border:1px solid var(--line);background:var(--panel);border-radius:15px;padding:20px}.card h3{margin:0 0 10px;font-size:16px}.card p{margin:0;font-size:14px}.taglist{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.tag{border:1px solid var(--line);background:#0e1622;padding:9px 12px;border-radius:999px;color:#d8e4f4;font-size:13px}footer{margin-top:70px;border-top:1px solid var(--line);padding-top:20px;color:#77869a;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){main{padding-top:42px}.hero{grid-template-columns:1fr;gap:28px;margin-top:32px}.portrait{max-width:470px}.title{letter-spacing:-1.5px}.cards{grid-template-columns:1fr}.section{margin-top:50px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">My journey · 2026</div>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Student · Aspiring Software Developer</div>
+      <h1 class="title">Hello, I'm<br><span>Shivam Kumar Gupta.</span></h1>
+      <p class="intro">I'm learning to turn curiosity into code. Right now, I'm building my foundations in Java, problem-solving, and Data Structures & Algorithms—one consistent step at a time.</p>
+      <div class="buttons">
+        <a class="button primary" href="#intro">▶ Meet me</a>
+        <a class="button" href="#vision">My vision ↓</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="profile.jpg" alt="My profile photo">
+      <div class="caption">A student today. A builder in progress.</div>
+    </div>
+  </section>
+
+  <section class="section" id="intro">
+    <h2>A little introduction</h2>
+    <p>This is where my short introduction video—with my own voice—will live.</p>
+    <div class="video">
+      <video controls playsinline poster="profile.jpg">
+        <source src="intro.mp4" type="video/mp4">
+        Your browser doesn't support this video.
+      </video>
+      <div class="video-note">Add your finished voice intro as <strong>intro.mp4</strong> in this repository. Visitors can press play to hear and watch it.</div>
+    </div>
+  </section>
+
+  <section class="section" id="vision">
+    <h2>My vision</h2>
+    <p>To become a thoughtful software developer who creates useful technology, solves meaningful problems, and keeps learning throughout the journey. I believe progress comes from consistency, curiosity, and building things—not just talking about them.</p>
+  </section>
+
+  <section class="section">
+    <h2>Currently building my foundations</h2>
+    <div class="cards">
+      <div class="card"><h3>☕ Java</h3><p>Learning programming fundamentals and writing clean, understandable code.</p></div>
+      <div class="card"><h3>🧩 Problem Solving</h3><p>Practicing logic, breaking problems down, and improving step by step.</p></div>
+      <div class="card"><h3>📚 DSA</h3><p>Working toward stronger foundations in data structures and algorithms.</p></div>
+    </div>
+    <div class="taglist"><span class="tag">Java</span><span class="tag">Learning DSA</span><span class="tag">Student</span><span class="tag">Consistency</span><span class="tag">Growth mindset</span></div>
+  </section>
+
+  <footer><span>Made with intention, one step at a time.</span><span>Replace “Shivam Kumar Gupta” and add your video when ready.</span></footer>
+</main>
+</body>
+</html>
